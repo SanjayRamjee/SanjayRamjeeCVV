@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+/****************   Nav Section **********************/
+nav {
+	background-color: bisque;
+  font: bold 18px verdana;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: bisque;
+  display: flex;
+  justify-content: center;
+  font: italic 18px verdana;
+}
+
+/*********** Splash Page ************************/
+header {
+  background-color: aliceblue;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-family: "Quantico", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: darkblue;
+}
+
+header img {
+  border-radius: 20%;
+  border: 2px solid darkblue;
+}
+
+.address {
+  font: bold 20px impact;
+  text-align: center;
+  color: orangered;
+}
+
+.tagline {
+  font: bold 18px impact;
+  text-align: center;
+  color: orangered;
+}
+
+/************* Sections ********************/
+hr {
+  border: 2px solid darkblue;
+}
+
+section h3 {
+  font-family:'Quantico', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  color: darkblue;
+}
+
+section dl {
+  display: grid;
+}
+
+section ul {
+  list-style-type: square;
+}
+
+section a {
+  color: orangered;
+  text-decoration: none;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+
+.card img {
+  border-radius: 15%;
+  border: 2px solid darkblue;
+
+}
+
+.card {
+  padding: 10px;
+  box-shadow: 10px 10px 10px grey;
+  gap: 30px;
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+    nav {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  color: orangered;
+  font: bold 20px impact;
+}
+
+input {
+  box-shadow: 10px 10px 10px grey;
+
+}
+
+textarea {
+  box-shadow: 10px 10px 10px grey;
+}
+
