@@ -1,28 +1,32 @@
 body {
   margin: 0;
   padding: 10px;
+  background-color: #0d0d0f;   /* near-black */
 }
 
 /****************   Nav Section **********************/
 nav {
-	background-color: bisque;
+	background-color: #f8f8f8; /* offwhite */
   font: bold 18px verdana;
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px;
   
 }
 
 /***********************  Footer Section   **************************/
 footer {
-	background-color: bisque;
+	background-color: white;
   display: flex;
   justify-content: center;
   font: italic 18px verdana;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px grey;
 }
 
 /*********** Splash Page ************************/
 header {
-  background-color: aliceblue;
   text-align: center;
   padding: 20px;
 }
@@ -30,45 +34,49 @@ header {
 header h1 {
   font-family: "Quantico", sans-serif;
   font-weight: 700;
-  font-size: 48px;
-  color: darkblue;
+  font-size: 60px;
+  color: white;
 }
 
 header img {
   border-radius: 20%;
-  border: 2px solid darkblue;
+  border: 2px solid white;
 }
 
 .address {
   font: bold 20px impact;
   text-align: center;
-  color: orangered;
+  color: white;
 }
 
 .tagline {
   font: bold 18px impact;
   text-align: center;
-  color: orangered;
+  color: white;
 }
 
 /************* Sections ********************/
 hr {
-  border: 2px solid darkblue;
+  border: 2px solid white;
 }
 
 section h3 {
   font-family:'Quantico', sans-serif;
   font-weight: 700;
   font-size: 32px;
-  color: darkblue;
+  color: white;
 }
 
 section dl {
   display: grid;
+  color: white;
+  font-family: 'Quantico', sans-serif;
 }
 
 section ul {
+  color: white;
   list-style-type: square;
+  font-family: 'Quantico', sans-serif;
 }
 
 section a {
@@ -90,7 +98,7 @@ section a:hover {
 
 .card img {
   border-radius: 15%;
-  border: 2px solid darkblue;
+  border: 2px solid white;
 
 }
 
@@ -115,8 +123,10 @@ section a:hover {
 
 /**************   Contact Page   *****************/
 .one-col {
-  color: orangered;
+  color: white;
   font: bold 20px impact;
+  font: bold 20px 'Quantico', sans-serif;
+  
 }
 
 input {
@@ -126,5 +136,6 @@ input {
 
 textarea {
   box-shadow: 10px 10px 10px grey;
+  padding: 30px;
 }
 
