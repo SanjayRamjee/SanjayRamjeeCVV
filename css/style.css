@@ -1,29 +1,40 @@
 body {
   margin: 0;
   padding: 10px;
-  background-color: #0d0d0f;   /* near-black */
+  background:
+    radial-gradient(circle at top left, #123c69, #0d1b2a 55%),
+    radial-gradient(circle at bottom right, #1f4068, transparent 60%);
+  background-color: #0d1b2a;
+  color: #eaeaea;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+
 }
+
 
 /****************   Nav Section **********************/
 nav {
-	background-color: #f8f8f8; /* offwhite */
-  font: bold 18px verdana;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  font: 600 18px 'Inter', sans-serif;
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
-  padding: 10px;
-  
+  border-radius: 14px;
+  padding: 14px 20px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: white;
 }
 
+
 /***********************  Footer Section   **************************/
-footer {
-	background-color: white;
-  display: flex;
-  justify-content: center;
-  font: italic 18px verdana;
-  border-radius: 10px;
-  box-shadow: 10px 10px 10px grey;
+
+footer,
+input,
+textarea {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
+
 
 /*********** Splash Page ************************/
 header {
@@ -32,32 +43,54 @@ header {
 }
 
 header h1 {
-  font-family: "Quantico", sans-serif;
-  font-weight: 700;
-  font-size: 60px;
+  font-family: 'Quantico', sans-serif;
+  font-size: 64px;
+  letter-spacing: 1px;
+}
+
+.address, .tagline {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
   color: white;
-}
-
-header img {
-  border-radius: 20%;
-  border: 2px solid white;
-}
-
-.address {
-  font: bold 20px impact;
   text-align: center;
+}
+
+
+.contact-link {
   color: white;
 }
 
-.tagline {
-  font: bold 18px impact;
-  text-align: center;
-  color: white;
-}
+
 
 /************* Sections ********************/
 hr {
   border: 2px solid white;
+}
+
+section a {
+  color: #ff6b4a;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+section a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: #ff6b4a;
+  transition: width 0.25s ease;
+}
+
+section a:hover {
+  color: #ffa07a;
+}
+
+section a:hover::after {
+  width: 100%;
 }
 
 section h3 {
@@ -79,14 +112,7 @@ section ul {
   font-family: 'Quantico', sans-serif;
 }
 
-section a {
-  color: orangered;
-  text-decoration: none;
-}
 
-section a:hover {
-  text-decoration: underline;
-}
 
 /**************   Projects   *****************/
 .three-col {
@@ -96,46 +122,51 @@ section a:hover {
   text-align: center;
 }
 
+header img,
 .card img {
-  border-radius: 15%;
-  border: 2px solid white;
-
+  border-radius: 16px;
+  border: 2px solid rgba(255,255,255,0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
 }
 
 .card {
-  padding: 10px;
-  box-shadow: 10px 10px 10px grey;
-  gap: 30px;
+  padding: 18px;
+  border-radius: 18px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.45);
+}
+
+
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
-    nav {
-      display: flex;
-      flex-direction: column;
-    }
+  body {
+    padding: 6px;
+  }
 
-    .three-col {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
+  nav {
+    gap: 10px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 42px;
+  }
 }
+
 
 /**************   Contact Page   *****************/
 .one-col {
   color: white;
-  font: bold 20px impact;
   font: bold 20px 'Quantico', sans-serif;
   
 }
 
-input {
-  box-shadow: 10px 10px 10px grey;
 
-}
-
-textarea {
-  box-shadow: 10px 10px 10px grey;
-  padding: 30px;
-}
 
