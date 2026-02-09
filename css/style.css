@@ -146,18 +146,15 @@ header img,
 
 /**************   Responsiveness   *****************/
 @media (max-width: 680px) {
-  body {
-    padding: 6px;
-  }
-
   nav {
-    gap: 10px;
-    text-align: center;
-  }
+      display: flex;
+      flex-direction: column;
+    }
 
-  header h1 {
-    font-size: 42px;
-  }
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 }
 
 
